@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width" charset="utf-8">
+
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<script src="js/bootstrap.js"></script>
+    
+
+</head>
+
+
+<body>
+
+<div class="container">
+
+<h1>Welcome</h1>
+
+
+<ul class="nav nav-tabs">
+	<li><a href="#">Home</a></li>
+	<li><a href="#">Links</a></li>
+	<li><a href="#">About</a></li>
+</ul>
+
+<div class="jumbotron">
+<img src="img/pig-icon.png" class="pull-right">
+
+  <h1>Hello, world!</h1>
+<p class="lead">
+Bacon ipsum dolor sit amet landjaeger pork belly meatball pastrami ham hock leberkas ribeye tri-tip, pork chop corned beef beef ribs kevin venison. Shoulder tri-tip filet mignon, chicken hamburger andouille boudin spare ribs shank. Brisket shank pancetta, filet mignon andouille ground round sirloin tongue chuck chicken. Short ribs boudin leberkas ham hock swine jowl landjaeger tail doner frankfurter. Strip steak shankle pork, doner sausage brisket hamburger chicken jerky. Capicola rump sirloin, filet mignon pork chuck leberkas shoulder. Strip steak drumstick swine turducken, kevin pork chop short loin.
+</p>
+
+
+  <p><a class="btn btn-success btn-lg" role="button">Learn more</a></p>
+</div>
+
+
+<div class="row">
+	<div class="col-sm-4">
+		<p class="lead">
+		<h2>Hamburger</h2>
+		Capicola rump sirloin, filet mignon pork chuck leberkas shoulder. Strip steak drumstick swine turducken, kevin pork chop short loin.
+		</p>
+	</div>
+	<div class="col-sm-4">
+		<p class="lead">
+		<h2>Chicken</h2>
+		Shoulder tri-tip filet mignon, chicken hamburger andouille boudin spare ribs shank. Brisket shank pancetta, filet mignon andouille ground round sirloin tongue chuck chicken. Short ribs boudin leberkas ham hock swine jowl landjaeger tail doner frankfurter.
+		</p>
+	</div>
+	<div class="col-sm-4">
+		<p class="lead">
+		<h2>Coca Cola</h2>
+		Short ribs boudin leberkas ham hock swine jowl landjaeger tail doner frankfurter. Strip steak shankle pork, doner sausage brisket hamburger chicken jerky.
+		</p>
+	</div>
+</div>
+
+<!-- Large modal -->
+<button class="btn btn-primary" data-toggle="modal" data-target=".bs-modal-lg">Large modal</button>
+
+<div class="modal fade bs-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      Detta är en jättestor dialogruta...
+
+
+      .......................
+      .............................
+      ........................................
+      ...................................................................................
+    </div>
+  </div>
+</div>
+
+<!-- Small modal -->
+<button class="btn btn-primary" data-toggle="modal" data-target=".bs-modal-sm">Small modal</button>
+
+<div class="modal fade bs-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      En lite mindre(?).
+    </div>
+  </div>
+</div>
+
+<!-- HTML to write -->
+<a href="#" data-toggle="tooltip" title="first tooltip">Hover over me</a>
+
+<!-- Generated markup by the plugin -->
+<div class="tooltip top">
+  <div class="tooltip-inner">
+     Tooltip!
+   </div>
+   <div class="tooltip-arrow"></div>
+</div>
+
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+            <div class="carousel-caption">
+        Carousel
+      </div>
+      <img src="img/carou1.jpg" alt="bild1"></div>
+      <div class="item">
+      <img src="img/carou2.jpg" alt="bild2"></div>
+      <div class="item">
+      <img src="img/carou3.jpg" alt="bild3">
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div>
+
+<script>
+
+function changeimage()
+{
+element=document.getElementById('myimage')
+if (element.src.match("bulbon"))
+  {
+  element.src="img/pic_bulboff.gif";
+  }
+else
+  {
+  element.src="img/pic_bulbon.gif";
+  }
+}
+
+</script>
+
+<img id="myimage" onclick="changeimage()" border="0" src="img/pic_bulbon.gif" width="100" height="180">
+
+</body>
+</body>
+</html>
